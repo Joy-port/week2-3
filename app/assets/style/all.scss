@@ -1,177 +1,160 @@
 @import "reset";
 @import "util";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 
-body{
+body {
   font-family: "Roboto", "sans-serif";
   font-style: italic;
 }
 
-a{
-  &:hover{
+a {
+  &:hover {
     opacity: 0.7;
   }
 }
 
-.header{
-  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true
-  ) ;
+.header {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; 
-  height: 100vh;
+  background-size: cover;
+  //height: 100vh;
+  //.header 建議可以依照設計稿設定高度 958px
+  height: 958px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  &__container{
-    width: 304px;
-    height: 100vh;
-    margin: 0 auto;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    h1{
+  &__container {
+    h1 {
       font-size: 80px;
       line-height: 106px;
       font-weight: 900;
     }
 
-    span{
+    span {
       display: block;
       text-align-last: left;
     }
-
   }
 
-  &__content{
+  &__content {
     width: 283px;
     margin: 0 auto;
   }
 
- &__links{
-   display: flex;
-   justify-content: space-between;
+  &__links {
+    display: flex;
+    justify-content: space-between;
 
-   a{
-     display: block;
-     width: 60px;
-     height: 60px;
-   }
- } 
+    a {
+      display: block;
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
 
-.profile{
-  
-
-  &__container{
+.profile {
+  &__container {
     width: 384px;
     padding: 56px 0;
-    margin: 0 auto; 
+    margin: 0 auto;
 
-    img{
+    img {
       margin-left: 14px;
       margin-right: 14px;
     }
 
-    h2{
-    text-align: center;
+    h2 {
+      text-align: center;
     }
-  
   }
 
-  &__content{
+  &__content {
     text-align: center;
 
-    li{
+    li {
       margin-left: -14px;
       margin-right: -14px;
     }
-
   }
-
-
 }
 
-.education{
-  &__list{
+.education {
+  &__list {
     border-top: 1px solid #000;
     padding-top: 28px;
     text-align: center;
 
-    li{
-      
+    li {
       display: flex;
       justify-content: center;
       align-items: center;
-
     }
 
-
-    span{
+    span {
       position: relative;
 
-      &::afteR{
-      content:'';
-      background-color: $red;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -2rem;
-    }
-
+      &::after {
+        content: "";
+        background-color: $red;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -2rem;
+      }
     }
   }
 }
 
-
-.brand{
+.brand {
   padding: 56px 0;
 
-  &__content{
-    width: 500px;
-    margin: 0 auto;
+  &__content {
     text-align: center;
     margin-bottom: 68px;
   }
-  &__container{
-    width: 1200px;
-    margin: 0 auto;
+  &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 
+    li {
+      margin-right: 24px;
+    }
   }
 }
 
-.works{
+.works {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
 
   padding: 56px 0;
 
-  &__list{
+  &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     margin-top: 56px;
-    a{
+    a {
       display: block;
     }
   }
 }
 
-.footer{
+.footer {
   padding: 64px 0;
   margin: 0 auto;
   text-align: center;
 
-  a{
+  a {
     text-decoration: none;
   }
 }
