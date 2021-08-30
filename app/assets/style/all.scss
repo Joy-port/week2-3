@@ -92,21 +92,14 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    span {
       position: relative;
-
-      &::after {
-        content: "";
+      
+      span{
         background-color: $red;
         width: 22px;
         height: 22px;
         border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -2rem;
+        margin-right: 2rem;
       }
     }
   }
@@ -145,6 +138,7 @@ a {
     margin-top: 56px;
     a {
       display: block;
+      margin-bottom: 1rem;
     }
   }
 }
